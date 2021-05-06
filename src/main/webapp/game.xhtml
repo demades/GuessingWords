@@ -1,11 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"> 
 
-<h:head></h:head> 
-<body> 
-LLegaste
-</body> 
+<h:head> <title>Good luck!</title>
+</h:head> 
+<h:body>
+<f:metadata>
+    <f:viewAction action="#{responseBean.onload()}" />
+</f:metadata>
+<h2> The Word to guess contains <h:outputLabel value="#{responseBean.w.largo}" /> letters </h2>
+<h3><h:outputLabel value="#{responseBean.w.dale}" /></h3>
+<h3><h:commandButton action="" value="" /> value="#{responseBean.w.dale}" /></h3>
+
+
+<h3>Attempths number: <h:outputLabel value="#{responseBean.counter}" /></h3>
+
+</h:body> 
 </html>
